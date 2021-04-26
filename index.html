@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> `
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="form-div">
+        <h1 id="title">Customer Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve our products and services
+        </p>
+        <form id="survey-form" action="#" method="get">
+            <fieldset id="field-set">
+                <label id="name-label" class="input-item" for="name">Name
+            <input
+              id="name"
+              class="form-field"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+                <label id="email-label" class="input-item" for="email">Email
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+                <label id="number-label" class="input-item" for="number">Age (optional)
+            <input
+              id="number"
+              min="10"
+              max="99"
+              type="number"
+              name="age"
+              placeholder="Age"
+            />
+          </label>
+                <label id="role-dropdown-label" class="input-item" for="dropdown">Which option best describes your work?
+            <select id="dropdown">
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Part Time Job</option>
+              <option>Prefer Not To Say</option>
+              <option>Other</option>
+            </select>
+          </label>
+                <label for="favorite" class="input-item">Which best describes how often you visit our site?
+            <select id="favorite">
+              <option>Daily</option>
+              <option>Frequently</option>
+              <option>Infrequently/option></option>
+              <option>First Time</option>
+            </select>
+          </label>
+                <div class="recommendation-list">
+                    <label for="recommendation">Would you recommend our products to a friend?
+              <input type="radio" name="recommendation" value="yes" />Definitely
+              <input type="radio" name="recommendation" value="maybe" />Maybe
+              <input type="radio" name="recommendation" value="no" />No
+            </label>
+                </div>
+                <div class="improve-list">
+                    <label for="improve">What would you like to see improved? (Check all that apply)
+              <div>
+                <input
+                  id="improve1"
+                  class="improve-item"
+                  type="checkbox"
+                  name="improve"
+                  value="Front-end Projects"
+                />Product Offering
+                <input
+                  id="improve2"
+                  class="improve-item"
+                  type="checkbox"
+                  name="improve"
+                  value="Back-end Projects"
+                />Delivery Services
+                <input
+                  id="improve3"
+                  class="improve-item"
+                  type="checkbox"
+                  name="improve"
+                  value="Data Visualization"
+                />Site Design
+              </div>
+            </label>
+                </div>
+                <label for="comments-suggestions" class="input-item">Suggestions:
+            <textarea
+              id="comments-suggestions"
+              name="msg"
+              maxlength="300"
+              rows="5"
+              placeholder="Please enter you suggestion"
+            ></textarea>
+          </label>
+            </fieldset>
+            <button id="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+    <script src="style.css"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

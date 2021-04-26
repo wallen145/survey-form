@@ -1,0 +1,69 @@
+body {
+    background-color: tan;
+}
+
+#form-div {
+    text-align: center;
+    margin: auto;
+}
+
+#field-set {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: auto;
+    border-radius: 20px;
+    background-color: lightyellow;
+    margin: auto;
+    align-items: right;
+}
+
+.dropdown-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.improve-list {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+.recommendation {
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-label {
+    text-align: right;
+}
+
+.form-field {
+    text-align: right;
+}
+
+.input-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-item input {
+    width: 20vw;
+    text-align: left;
+}
+
+.input-item textarea {
+    width: 20vw;
+    height: 10vw;
+}
+
+.submit-button {
+    align-self: center;
+}
